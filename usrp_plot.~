@@ -1,0 +1,7 @@
+ fid=fopen('usrp_samples.dat'); a=fread(fid,'int16'); fclose(fid);
+ ii=a(1:2:end);
+ qq=a(2:2:end);
+
+figure(1); clf; hold on;
+plot(ii,'b');
+plot(qq,'b');
